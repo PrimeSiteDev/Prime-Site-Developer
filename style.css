@@ -1,0 +1,124 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #f5f2ec;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* NAV */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+    background: transparent;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    background: linear-gradient(to right, #f5f2ec, #eae5dc);
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #111;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    border: 1px solid #111;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #111;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 60px;
+}
+
+/* PRICING */
+.pricing {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.price-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.price-card h3 {
+    font-size: 30px;
+}
+
+.monthly {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.featured {
+    border: 2px solid gold;
+}
+
+/* CONTACT */
+.contact-links a {
+    display: block;
+    margin: 10px 0;
+    color: #111;
+    text-decoration: none;
+}
+
+/* LIGHT ANIMATION */
+body::before {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+    top: 20%;
+    left: 10%;
+    animation: float 8s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(40px); }
+}
